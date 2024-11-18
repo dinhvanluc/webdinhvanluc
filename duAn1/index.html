@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Ký Thông Tin Người Dùng</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 100px;
+  }
+
+  
+  header {
+    background-color: #000000;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+
+  header .logo {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  
+  nav a {
+    color: white;
+  margin: 30px;
+  text-decoration: none;
+  font-size: 40px;
+
+  }
+
+  
+  .banner {
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+ 
+  
+
+
+  .body-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+ 
+  .form-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .form-container h2 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container input,
+  .form-container textarea,
+  .form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+  }
+
+  .form-container label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .form-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .form-container button:hover {
+    background-color: #45a049;
+  }
+
+  footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 20px;
+}
+
+ 
+  @media (max-width: 768px) {
+    .form-container {
+      width: 90%;
+    }
+  }
+  </style>
+
+
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo" >
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSixLYWZnl9ypfspghNSquMvusdAf5AM24IdrJYHzQ6Urn_588AGIi6Y0mNXUt-0YLCTIQ&usqp=CAU" alt="">
+       </div>
+       <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+  </header>
+  <div class="banner">
+    <p>Chúng tôi đang chào đón bạn! Đăng ký ngay để nhận nhiều ưu đãi hấp dẫn.</p>
+    <img src="https://lh7-us.googleusercontent.com/PBdw35Q9rJtrgvaBXZ_iGAX76rOA6CTgqMYWs0cXVYoUKVDJXtJgavxZQR0jqpoPUy0FprcuC7FF1FI7g3uFnur89dNoQLfEBMmc0bOHhKEv91eXtNhRzakzX_FL-qutTtjvJU10ctzHKWtK6Ihs6NA" alt="">
+  </div>
+
+  <div class="body-container">
+    <div class="form-container">
+      <h2>Đăng ký thông tin người dùng</h2>
+      <form id="userForm">
+
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label>Giới tính:</label>
+        <input type="radio" id="male" name="gender" value="Nam" required>
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="Nữ" required>
+        <label for="female">Nữ</label>
+
+        <label>Sở thích:</label>
+        <input type="checkbox" id="sports" name="hobbies" value="Thể thao">
+        <label for="sports">Thể thao</label>
+        <input type="checkbox" id="movies" name="hobbies" value="Phim ảnh">
+        <label for="movies">Phim ảnh</label>
+        <input type="checkbox" id="reading" name="hobbies" value="Đọc sách">
+        <label for="reading">Đọc sách</label>
+        <input type="checkbox" id="music" name="hobbies" value="Âm nhạc">
+        <label for="music">Âm nhạc</label>
+        <input type="checkbox" id="other" name="hobbies" value="Khác">
+        <label for="other">Khác</label>
+
+        <label for="bio">Giới thiệu bản thân:</label>
+        <textarea id="bio" name="bio" rows="4" required></textarea>
+        <button type="submit">Đăng ký</button>
+
+        <footer>
+          <p>Đinh văn lực | Email: lebep982@gmail.com | Lớp: T2409M Sem1	</p>
+      </footer>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('userForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const gender = document.querySelector('input[name="gender"]:checked')?.value;
+      const hobbies = Array.from(document.querySelectorAll('input[name="hobbies"]:checked'))
+                            .map(el => el.value)
+                            .join(', ');
+      const bio = document.getElementById('bio').value;
+      if (name && email && phone && gender && bio) {
+        alert('Đăng ký thành công!\n' +
+              `Họ và tên: ${name}\n` +
+              `Email: ${email}\n` +
+              `Số điện thoại: ${phone}\n` +
+              `Giới tính: ${gender}\n` +
+              `Sở thích: ${hobbies}\n` +
+              `Giới thiệu bản thân: ${bio}`);
+      } else {
+        alert('Vui lòng điền đầy đủ thông tin!');
+      }
+    });
+  </script>
+
+</body>
+</html>
